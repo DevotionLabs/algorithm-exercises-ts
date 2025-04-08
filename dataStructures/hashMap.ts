@@ -7,10 +7,8 @@ type Element = {
 
 class ChainedHashMap {
   private buckets: Element[][];
-  private size: number;
 
-  constructor(size: number) {
-    this.size = size;
+  constructor(private size: number) {
     this.buckets = new Array(size).fill(null).map(() => []);
   }
 
